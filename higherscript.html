@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Programs</title>
+</head>
+<body>
+
+<h2>JavaScript Programs Output</h2>
+
+<script>
+document.write("1. Swap Two Numbers<br>");
+let a = 10, b = 20;
+a = a + b;
+b = a - b;
+a = a - b;
+document.write("a = " + a + ", b = " + b + "<br><br>");
+
+document.write("2. Total, Average and Percentage<br>");
+let m1 = 80, m2 = 75, m3 = 90, m4 = 85, m5 = 70;
+let total = m1 + m2 + m3 + m4 + m5;
+let average = total / 5;
+let percentage = (total / 500) * 100;
+document.write("Total = " + total + "<br>");
+document.write("Average = " + average + "<br>");
+document.write("Percentage = " + percentage + "%<br><br>");
+
+document.write("3. Circle<br>");
+const PI = 3.14;
+let radius = 5;
+let area = PI * radius * radius;
+let circumference = 2 * PI * radius;
+document.write("Area = " + area + "<br>");
+document.write("Circumference = " + circumference + "<br><br>");
+
+document.write("4. Days Conversion<br>");
+let days = 400;
+let years = Math.floor(days / 365);
+let remaining = days % 365;
+let months = Math.floor(remaining / 30);
+let daysLeft = remaining % 30;
+document.write(years + " Years, " + months + " Months, " + daysLeft + " Days<br><br>");
+
+document.write("5. Gross Salary<br>");
+let basic = 20000;
+let HRA = 5000;
+let DA = 3000;
+let salary = basic + HRA + DA;
+document.write("Gross Salary = " + salary + "<br><br>");
+
+document.write("6. Electricity Bill<br>");
+let units = 150;
+let bill;
+
+if (units <= 100)
+    bill = units * 5;
+else if (units <= 200)
+    bill = 100 * 5 + (units - 100) * 7;
+else
+    bill = 100 * 5 + 100 * 7 + (units - 200) * 10;
+
+document.write("Electricity Bill = " + bill + "<br><br>");
+
+document.write("7. Compound Interest<br>");
+let principal = 10000;
+let rate = 5;
+let time = 2;
+let amount = principal * Math.pow(1 + rate / 100, time);
+let CI = amount - principal;
+document.write("Compound Interest = " + CI.toFixed(2) + "<br><br>");
+
+document.write("8. Seconds Conversion<br>");
+let seconds = 3675;
+let hours = Math.floor(seconds / 3600);
+let rem = seconds % 3600;
+let minutes = Math.floor(rem / 60);
+let sec = rem % 60;
+document.write(hours + " Hours, " + minutes + " Minutes, " + sec + " Seconds<br><br>");
+
+document.write("9. BMI<br>");
+let weight = 60;
+let height = 1.7;
+let BMI = weight / (height * height);
+document.write("BMI = " + BMI.toFixed(2) + "<br><br>");
+
+document.write("10. Triangle Area<br>");
+let x = 5, y = 6, z = 7;
+let s = (x + y + z) / 2;
+let triangleArea = Math.sqrt(s * (s-x) * (s-y) * (s-z));
+document.write("Area of Triangle = " + triangleArea.toFixed(2));
+
+</script>
+
+</body>
+</html>
